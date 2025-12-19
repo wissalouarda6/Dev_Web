@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream House - Meubles et Décoration</title>
+    <link rel="stylesheet" href="purpul.css">
+    <script src="https://kit.fontawesome.com/9e7403029f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header> 
+  <a href="#" class="brand"><img src="images/d-letter-logo-png-1375.png" height="50px" width="60px"></a>
+  <div class="menu-btn"></div>
+  <div class="navigation">
+    <div class="navigation-items">
+      <a href="#home">Accueil</a>
+      <div class="dropdown">
+        <button id="catt"><a href="#categories">Catégories</a></button>
+        <div class="dropdown-content">
+        <a href="#salon">Salon</a>
+        <a href="#chambre">Chambre</a>
+        <a href="#deco">Décoration</a>
+      </div>
+    </div>
+      <a href="#Produit">Produits</a>
+      <a href="#about">À Propos</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section id="home">
+  <div class="content">
+    <h1>Dream.<br><span>House</span></h1>
+    <p>Bienvenue chez Dream House, votre destination privilégiée pour les meubles modernes et la décoration d'intérieur. Découvrez notre sélection exclusive de pièces de design contemporain pour embellir votre maison.</p>
+    <button class="btn"><a href="#about">En Savoir Plus</a></button>
+  </div>
+  <div id ="shad"></div>
+</section>
+
+<script type="text/javascript">
+const menuBtn = document.querySelector(".menu-btn");
+  const navigation = document.querySelector(".navigation");
+  menuBtn.addEventListener("click",() => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");})
+</script>
+
+<section id="categories">
+  <div class="category">
+    <div class="circle">
+      <a href="#salon"><img src="images/4.jpg" alt="Catégorie Salon" height="200px" width="200px">
+      <div class="overlay">
+        <h3>Salon</h3>
+        <p>Découvrez notre collection de salons de luxe</p>
+      </div>
+    </a>
+    </div>
+    <h2>Salon</h2>
+  </div>
+
+  <div class="category">
+    <div class="circle">
+      <a href="#chambre"><img src="images/11.jpg" alt="Catégorie Chambre" height="200px" width="200px">
+      <div class="overlay">
+        <h3>Chambre</h3>
+        <p>Découvrez notre collection de chambres de luxe</p>
+      </div>
+    </a>
+    </div>
+    <h2>Chambre</h2>
+  </div>
+
+  <div class="category">
+    <div class="circle">
+      <a href="#deco"><img src="images/14.jpg" alt="Catégorie Décoration" height="200px" width="200px">
+      <div class="overlay">
+        <h3>Décoration</h3>
+        <p>Découvrez notre collection de décoration de luxe</p>
+      </div>
+    </a>
+    </div>
+    <h2>Décoration</h2>
+  </div>
+</section>
+
+<section id="Produit">
+  <h1 class="heading">Nos <span>produits</span></h1>
+<div class="container">
+    <div class="center">
+     
+     <h3 id="salon">Salons</h3>
+      <div class="list">
+
+          <div class="item" data-key="1">
+              <div class="img">
+                  <img src="images/1p.jpg">
+              </div>
+              <div class="content">
+                  <div class="title">Salon 6 Places Okynus</div>
+                  <div class="des">
+                     Salon contemporain grand format confortable pour toute la famille. Transformable en lit.
+                  </div>
+                  <div class="price">147 000 DA</div>
+                  <input type="number" class="count" min="1" value="1">
+                  <button class="add">Ajouter au Panier</button>
+                  <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash"></i></button>
+              </div>
+          </div>
+
+           <div class="item" data-key="2">
+              <div class="img">
+                  <img src="images/11.jpg">
+              </div>
+              <div class="content">
+                  <div class="title">Salon 6 Places Okynus</div>
+                  <div class="des">
+                     Salon contemporain grand format confortable pour toute la famille. Transformable en lit.
+                  </div>
+                  <div class="price">147 000 DA</div>
+                  <input type="number" class="count" min="1" value="1">
+                  <button class="add">Ajouter au Panier</button>
+                  <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash"></i></button>
+              </div>
+          </div>
+
+           <div class="item" data-key="3">
+              <div class="img">
+                  <img src="images/15.jpg">
+              </div>
+              <div class="content">
+                  <div class="title">Salon 6 Places Okynus</div>
+                  <div class="des">
+                     Salon contemporain grand format confortable pour toute la famille. Transformable en lit.
+                  </div>
+                  <div class="price">147 000 DA</div>
+                  <input type="number" class="count" min="1" value="1">
+                  <button class="add">Ajouter au Panier</button>
+                  <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash"></i></button>
+              </div>
+          </div>
+
+          <div class="item" data-key="4">
+              <div class="img">
+                  <img src="images/8.jpg">
+              </div>
+              <div class="content">
+                  <div class="title">Salon Forme L Eko</div>
+                  <div class="des">
+                      Salon d'angle avec 5 grands coussins. Style contemporain, sobre et accueillant.
+                  </div>
+                  <div class="price">42 500 DA</div>
+                  <input type="number" class="count" min="1" value="1">
+                  <button class="add">Ajouter au Panier</button>
+                  <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash"></i></button>
+              </div>
+          </div>
+      </div>
+
+      <h3 id="chambre">Chambres à Coucher</h3>
+      <div class="list">
+
+          <div class="item" data-key="5">
+              <div class="img">
+                  <img src="images/3.jpg">
+              </div>
+              <div class="content">
+                  <div class="title">Chambre à Coucher Venizia</div>
+                  <div class="des">
+                      Chambre design moderne aux lignes épurées. Qualité et élégance réunies.
+                  </div>
+                  <div class="price">104 000 DA</div>
+                  <input type="number" class="count" min="1" value="1">
+                  <button class="add">Ajouter au Panier</button>
+                  <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash"></i></button>
+              </div>
+          </div>
+
+          <div class="item" data-key="6">
+              <div class="img">
+                  <img src="images/2p.jpg">
+              </div>
+              <div class="content">
+                  <div class="title">Chambre à Coucher Greto</div>
+                  <div class="des">
+                      Chambre Greto combinant les tendances modernes. Design esthétique et confortable.
+                  </div>
+                  <div class="price">190 000 DA</div>
+                  <input type="number" class="count" min="1" value="1">
+                  <button class="add">Ajouter au Panier</button>
+                  <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash"></i></button>
+              </div>
+          </div>
+
+          <div class="item" data-key="7">
+            <div class="img">
+                <img src="images/2.jpg">
+            </div>
+            <div class="content">
+                <div class="title">Chambre à Coucher SLS3540</div>
+                <div class="des">Formes modernistes atténuées avec palette naturelle. Harmonie et confort.
+                </div>
+                <div class="price">201 000 DA</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add">Ajouter au Panier</button>
+                <button class="remove" onclick="Remove(7)"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </div>
+
+            <div class="item" data-key="8">
+             <div class="img">
+                <img src="images/5.jpg">
+             </div>
+             <div class="content">
+                 <div class="title">Chambre à Coucher Rustic</div>
+                <div class="des">Chambre Rustic Homestyle combinant les tendances design. Style authentique et élégant.
+                </div>
+                <div class="price">180 000 DA</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add">Ajouter au Panier</button>
+                <button class="remove" onclick="Remove(8)"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            </div>
+      </div>
+
+      <h3 id="deco">Décoration</h3>
+      <div class="list">
+
+            <div class="item" data-key="9">
+                <div class="img">
+                   <img src="images/miroir-mural-en-bois-aurore.jpg">
+                </div>
+                <div class="content">
+                    <div class="title">Miroir Aurore</div>
+                   <div class="des">
+                    Miroir mural en bois au design original. Élément de décoration incontournable pour votre intérieur.
+                   </div>
+                   <div class="price">30 000 DA</div>
+                   <input type="number" class="count" min="1" value="1">
+                   <button class="add">Ajouter au Panier</button>
+                   <button class="remove" onclick="Remove(9)"><i class="fa-solid fa-trash"></i></button>
+               </div>
+               </div>
+
+            <div class="item" data-key="10">
+                <div class="img">
+                   <img src="images/shop-the-look-8.jpg">
+                </div>
+                <div class="content">
+                    <div class="title">Vase en Verre Jizon</div>
+                   <div class="des">Accessoire décoratif en verre Jizon au design original. Impact écologique réduit.
+                   </div>
+                   <div class="price">10 000 DA</div>
+                   <input type="number" class="count" min="1" value="1">
+                   <button class="add">Ajouter au Panier</button>
+                   <button class="remove" onclick="Remove(10)"><i class="fa-solid fa-trash"></i></button>
+               </div>
+               </div>
+
+            <div class="item" data-key="11">
+              <div class="img">
+                 <img src="images/17.jpg">
+              </div>
+              <div class="content">
+                  <div class="title">Vase en Verre Jizon</div>
+                 <div class="des">Accessoire décoratif en verre Jizon au design original. Impact écologique réduit.
+                 </div>
+                 <div class="price">10 000 DA</div>
+                 <input type="number" class="count" min="1" value="1">
+                 <button class="add">Ajouter au Panier</button>
+                 <button class="remove" onclick="Remove(11)"><i class="fa-solid fa-trash"></i></button>
+             </div>
+             </div>
+
+            <div class="item" data-key="12">
+              <div class="img">
+                 <img src="images/1m.jpg">
+              </div>
+              <div class="content">
+                  <div class="title">Vase en Verre Jizon</div>
+                 <div class="des">Accessoire décoratif en verre Jizon au design original. Impact écologique réduit.
+                 </div>
+                 <div class="price">10 000 DA</div>
+                 <input type="number" class="count" min="1" value="1">
+                 <button class="add">Ajouter au Panier</button>
+                 <button class="remove" onclick="Remove(12)"><i class="fa-solid fa-trash"></i></button>
+             </div>
+             </div>
+    </div>
+ </div>
+
+ 
+  <div class="cart">
+      <div class="name">PANIER</div>
+      <div class="listCart">
+  </div>
+</div>
+</div>
+</section>
+
+<script>
+  let list = document.querySelectorAll('.list .item');
+list.forEach(item => {
+    item.addEventListener('click', function(event){
+        if(event.target.classList.contains('add')){
+            var itemNew = item.cloneNode(true);
+            let checkIsset  = false;
+
+            let listCart = document.querySelectorAll('.cart .item');
+            listCart.forEach(cart =>{
+                if(cart.getAttribute('data-key') == itemNew.getAttribute('data-key')){
+                    checkIsset = true;
+                    cart.classList.add('danger');
+                    setTimeout(function(){
+                        cart.classList.remove('danger');
+                    },1000)
+                }
+            })
+            if(checkIsset == false){
+                document.querySelector('.listCart').appendChild(itemNew);
+            }
+
+        }
+    })
+})
+function Remove($key){
+    let listCart = document.querySelectorAll('.cart .item');
+    listCart.forEach(item => {
+        if(item.getAttribute('data-key') == $key){
+            item.remove();
+            return;
+        }
+    })
+}
+</script>
+
+<section id="gallery">
+<div class="containere">
+    <div class="heading">
+      <h3>Galerie <span>Photos</span></h3>
+    </div>
+    <div class="box">
+      
+      <div class="dream">
+        <img src="images/1.jpg">
+         <img src="images/2.jpg">
+          <img src="images/3.jpg">
+           <img src="images/4.jpg">
+            <img src="images/5.jpg">
+            
+      </div>
+
+        <div class="dream">
+        <img src="images/6.jpg">
+         <img src="images/7.jpg">
+          <img src="images/8.jpg">
+           <img src="images/9.jpg">
+            <img src="images/10.jpg">
+            
+      </div>
+
+        <div class="dream">
+        <img src="images/11.jpg">
+         <img src="images/12.jpg">
+          <img src="images/13.jpg">
+           <img src="images/14.jpg">
+            <img src="images/15.jpg">
+            
+      </div>
+
+    </div>
+      <a class="btn" href="#Produit">Acheter Maintenant</a>
+    
+</section>
+
+<section id="about">
+<div class="about">
+    <div class="inner-section">
+        <h1>À Propos de Nous</h1>
+        <p class="text">
+          Dream House s'engage à concrétiser vos projets de décoration intérieure. Notre équipe spécialisée offre la meilleure qualité, un service irréprochable et des avantages exclusifs. Nous collaborons avec décorateurs d'intérieur, architectes, professionnels de l'hôtellerie, restauration et événementiel.
+        </p>
+        <div>
+            <button class="btn"><a href="#contact">Contactez-Nous</a></button>
+        </div>
+    </div>
+</div>
+</section> 
+
+<section id="contact">
+        
+  <form action="">
+    <div class="title">
+      <h2>CONTACT</h2>
+    </div>
+    <div class="half">
+      <div class="itemm">
+        <label for="name">Nom</label>
+        <input type="text" id="name">
+      </div>
+      <div class="itemm">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+      </div>
+    </div>
+    <div class="full">
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+    </div>
+    <div class="action">
+      <input type="submit" value="Envoyer">
+      <input type="reset" value="Réinitialiser">
+    </div>
+    <div class="icons">
+      <a href="" class="fa fa-twitter"></a>
+      <a href="" class="fa fa-facebook"></a>
+      <a href="" class="fa fa-instagram"></a>
+    </div>
+  </form>
+      </section>
+
+<footer class="site-footer">
+  <div class="footer-list">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <p>&copy; 2023 Dream House. Tous droits réservés.</p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <p>Conçu par <a href="#">OUHASSINE WISSAL OUARDA</a></p>
+        <div class="social-icons">
+          <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
